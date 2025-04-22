@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aventura por Capítulos</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background-color: #5C94FC;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+        
+        .game-container {
+            width: 90%;
+            max-width: 800px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        }
+        
+        .title {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .title h1 {
+            font-size: 2.5em;
+            color: #CC0000;
+            text-shadow: 2px 2px 0 #FFCC00;
+        }
+        
+        .book {
+            background-color: #8B4513;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            color: white;
+            cursor: pointer;
+        }
+        
+        .book h2 {
+            font-size: 1.8em;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        
+        .chapters {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .chapter {
+            width: 120px;
+            height: 60px;
+            background-color: #FFCC00;
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            font-size: 1.2em;
+            color: #333;
+            box-shadow: 0 4px 0 #CC9900;
+        }
+        
+        .coming-soon {
+            text-align: center;
+            font-size: 1.5em;
+            color: #888;
+            font-style: italic;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        
+        .ground {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 80px;
+            background-color: #77DD77;
+            border-top: 10px solid #8B4513;
+            z-index: -1;
+        }
+        
+        .cloud {
+            position: absolute;
+            background-color: white;
+            border-radius: 50%;
+            z-index: -1;
+        }
+        
+        .cloud-1 {
+            width: 120px;
+            height: 60px;
+            top: 80px;
+            left: 150px;
+        }
+        
+        .cloud-2 {
+            width: 150px;
+            height: 75px;
+            top: 120px;
+            right: 180px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Elementos decorativos de fondo -->
+    <div class="cloud cloud-1"></div>
+    <div class="cloud cloud-2"></div>
+    <div class="ground"></div>
+    
+    <div class="game-container">
+        <div class="title">
+            <h1>SUPER AVENTURA</h1>
+        </div>
+        
+        <div class="book">
+            <h2>Libro 1</h2>
+            <div class="chapters">
+                <div class="chapter">Chapter 1</div>
+                <div class="chapter">Chapter 2</div>
+                <div class="chapter">Chapter 3</div>
+                <div class="chapter">Chapter 4</div>
+            </div>
+        </div>
+        
+        <div class="coming-soon">
+            Coming Soon...
+        </div>
+    </div>
+</body>
+</html>
